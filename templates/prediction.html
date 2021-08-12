@@ -1,0 +1,36 @@
+{% extends "template.html" %}
+
+{% block title %}
+Prediction page    
+
+{% endblock %}
+
+{% block content %}
+<p> To predict the electricity prices, please provide any one of the following inputs :</p>
+<p>For the prediction of the very next day, please input 1 and submit<p>
+<p>For the prediction for 15 days, please input 15 and submit<p>
+<p>For the prediction for 30 days, please input 30 and submit<p>
+
+
+<head>
+<title></title>
+<style>
+body
+
+{
+   background-image:url({{ url_for('static',filename='electricity.jpg') }});
+   background-size:cover
+}
+
+</style>
+</head>
+
+
+
+<form action="#" method="post">
+	<p>Input:</p>
+	<p><input type="text" name="nm" /></p>
+	<p><input type="submit" value="submit"/></p>
+</form>   
+
+{% endblock %}
